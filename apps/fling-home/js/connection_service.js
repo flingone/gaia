@@ -210,7 +210,7 @@ var ConnectService = (function () {
 
             console.log('message: ' + JSON.stringify(message));
             if (message.command == "setting") {      // 'Set' command
-                console.log("setting type:" + message.type);
+                console.log("setting message.type:" + message.type);
                 if (message.type == "wifi") {    // setup wifi
                     connectssid = message['wifi-name'];
                     bssid = message['wifi-bssid'];
@@ -281,7 +281,12 @@ var ConnectService = (function () {
                     if (null != tz) {
                         handleTimezoneSet(tz, true);
                     }
-
+                } else if (message.type == 'time_set') {  // set time
+                    var tm = message['time'];
+                    console.log("message.type time_set:" + tm);
+                    if (null != tm) {
+                        handleTimeSet(tm, true);
+                    }
                 } else if (message.type == 'language') {  // change language
                     var _language = message['language'];
                     if (null != _language) {
@@ -433,6 +438,37 @@ var ConnectService = (function () {
         PageHelper.setElement(name, connectssid);
     }
 
+  
+    /**
+     * Set device's time. 
+     * Time format: MM dd,yyyy hh:mm:ss
+     *
+     * @param time
+     * @param reload
+     */
+    function handleTimeSet(tm, reload) {
+        console.log("handle time:" + tm);
+        
+        if (tm == null) {
+            console.log("handle time is null.");
+            return;
+        }
+
+        var createDT = new Date(tm);
+        console.log("handle Time : set " + createDT);
+        var request = navigator.mozTime.set(createDT);
+        
+        request.onsuccess = function () {
+            if (reload) {
+                window.location.reload(true);
+            }
+        };
+        request.onerror = function () {
+            console.error("An error occured: ");
+        };
+    }
+    
+	
     /**
      * Set device's time. 
      * Time format: MM dd,yyyy hh:mm:ss
