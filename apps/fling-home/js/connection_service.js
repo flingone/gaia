@@ -46,6 +46,7 @@ var ConnectService = (function () {
     var cfdSocket = null;
     var networkManager = networkHelper.getNetworkManager();
     var timezoneChanged = false;
+    var isTimeSetBySetting = false;
     var autoScan = false;
     var scanTimeoutCount = 0;
     var aplastScanDate = 0;
@@ -93,9 +94,18 @@ var ConnectService = (function () {
             isToggled = true;
             isOldTime = false;
         } else if (isToggled) {
-            settings.createLock().set({
-                'time.clock.automatic-update.enabled': true // always enable auto-update time?
-            });
+            if (isTimeSetBySetting) {
+                console.log("Disable auto-update time.");
+                settings.createLock().set({
+                    'time.clock.automatic-update.enabled': false // disable auto-update time after "time_set".
+                });
+            } else {
+                console.log("Enable auto-update time.");
+                settings.createLock().set({
+                    'time.clock.automatic-update.enabled': true // enable auto-update time.
+                });
+            };
+            
             console.log("Show Time!");
             PageHelper.showTime();
         }
@@ -462,6 +472,7 @@ var ConnectService = (function () {
             return;
         }
         _mozTime.set(createDT);
+        isTimeSetBySetting = true;
     }
 
     /**
