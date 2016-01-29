@@ -1,31 +1,58 @@
 <html>
 <head>
   <title>Fling Simple Player</title>
-  <meta  charset=utf-8"/>
+  <meta  charset="utf-8">
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style/player.css" >
-
 </head>
 
 <body>
-  <div class="overlay">
-    <h1 id="label"></h1>
+
+  <div class="input-container">
+    <div id="input-wrapper">
+      <p>IP address:
+        <input type="text" id="ipaddr" />
+      </p>
+    </div>
+    <button id="btn" type="submit" >OK</button>
   </div>
 
-  <div class="inputContainer">
-    <p>Camera Ip:
-      <input type="text" id="ipaddr" />
-      <button id="btn" type="submit" >Play</button>
-    </p>
-  </div>
+  <div id="out-container">
+    <div class="videoContainer">
+      <video id="media" src="http://10.240.8.41/mm-test/test.webm" controls="controls" autoplay="true">
+        Your browser does not support the video tag.
+      </video>
+      <div id="timer">
+        00:00:00
+      </div>
+    </div>
 
-  <div class="videoContainer">
-    <video id="media" src="http://10.240.8.41/mm-test/test-480p.mov" controls="controls" autoplay="true">
-      Your browser does not support the video tag.
-    </video>
+    <div class="details-container">
+      <ul id="details-list">
+        <li>
+          <span>Name:</span>&nbsp;Conference
+        </li>
+        <li>
+          <span>IP Address:</span>&nbsp;<span id="output_ip">192.168.1.128</span>
+        </li>
+        <li>
+          <span>Port:</span>&nbsp;<span id="output_port">80</span>
+        </li>
+        <li>
+          <span>Brand:</span>&nbsp;[ONVIF]
+        </li>
+        <li>
+          <span>Camera model:</span>&nbsp;Generic_ONVIF
+        </li>
+        <li>
+          <span>User name:</span>&nbsp;admin
+        </li>
+        <li>
+          <span>Password:</span>&nbsp;********
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <script type="application/javascript" src="player.js"></script>
 
 </body>
 </html>

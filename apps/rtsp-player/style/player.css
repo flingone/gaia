@@ -1,36 +1,109 @@
 html, body {
+  font-size: 62.5%; /* 10 ÷ 16 × 100% = 62.5% */
+  background-color: #0C0D0F;
   margin: 0;
-  background-color: #fff;
-}
-h1 {
-  font-family: arial, sans-serif;
-  font-size: 32px;
-  color: #fff;
-}
-.overlay {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  padding: 20px 50px 20px 50px;
-  background-color: #000;
-  opacity: 0.50;
-  z-index: 2;
-}
-.videoContainer {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  font-family: Open sans;
   overflow: hidden;
 }
-.videoContainer video {
-  width: 100%;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
+
+.videoContainer {
+  overflow: hidden;
+  float: left;
 }
 
-.inputContainer {
+#output_port, #output_ip {
+  color: #555658;
+}
 
+.details-container {
+  height: 720px;
+  margin-left: 4rem;
+  width: 30rem;
+  float: left;
+  font-size: 1.8rem;
+}
+
+#details-list li {
+  height: 6.2rem;
+  color: #555658;
+  list-style: none;
+}
+
+#details-list li span {
+  color: #2A2A2A;
+}
+
+#timer {
+  color: #555658;
+  font-size: 1.8rem;
+  height: 6.2rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.videoContainer video {
+  width: 640px;
+  height: 480px;
+}
+
+.input-container {
+  margin-left: 4rem;
+}
+
+#btn {
+  color: #555658;
+  font-size: 1.5rem;
+  width: 6rem;
+  height: 3rem;
+  margin-top: 1.9rem;
+  margin-left: 1rem;
+  background: none repeat scroll 0% 0% #2A2A2A;
+  border-style: none none solid;
+  border-color: -moz-use-text-color -moz-use-text-color #2A2A2A;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.input-container div p{
+  color: #2A2A2A;
+  font-size: 1.5rem;
+}
+
+#input-wrapper {
+  border-bottom: 1px solid;
+  border-color: #2A2A2A;
+  float: left;
+  width: 93%;
+}
+
+#out-container {
+  margin-top: 4rem;
+  margin-left: 4rem;
+  width: 1920px;
+}
+
+.input-container div p input{
+  border: 0px;
+  background-color: #0C0D0F;
+  color: #555658;
+  font-size: 1.5rem;
+  width: 93%;
+  background: none repeat scroll 0% 0% transparent;
+  border-style: none none solid;
+  border-color: -moz-use-text-color -moz-use-text-color #FFF;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 .btn {
@@ -40,3 +113,5 @@ h1 {
 .ipaddr {
 
 }
+
+
