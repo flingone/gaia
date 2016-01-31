@@ -330,8 +330,10 @@
           if (thisItem.type === 'app') {
             var itemObj = this.applicationSource.mapToApp(thisItem);
 
-            if (!HIDDEN_APPS.indexOf('thisItem.manifestURL')) {
+            if (HIDDEN_APPS.indexOf(thisItem.manifestURL) === -1) {
               addIfUnique.call(this, itemObj);
+            } else {
+              console.log('[MWC DEMO]ignore app manifestURL:' + thisItem.manifestURL);
             }
           } else if (thisItem.type === 'divider') {
             var divider = new GaiaGrid.Divider(thisItem);
