@@ -12,7 +12,7 @@ html, body {
 }
 
 #output_port, #output_ip {
-  color: #555658;
+  color: #555658 !important;
 }
 
 .details-container {

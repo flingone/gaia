@@ -2,7 +2,5 @@ apps/homescreen
 apps/keyboard
 apps/settings
 apps/system
-apps/callscreen
-apps/communications
 apps/verticalhome
 apps/rtsp-player
