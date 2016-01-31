@@ -166,7 +166,7 @@
     /**
      * Width in grid units for each icon.
      */
-    gridWidth: 1,
+    gridWidth: 8,
 
     get name() {
       var userLang = document.documentElement.lang;

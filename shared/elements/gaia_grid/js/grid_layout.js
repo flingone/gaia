@@ -27,7 +27,12 @@
 
     if (window.verticalPreferences) {
       verticalPreferences.get('grid.cols').then(value => {
-        this.cols = value;
+        if (value) {
+          this.cols = value;
+        } else {
+          this.cols = 8; // set init value?
+        }
+
         this.onReady();
       }, this.onReady);
       verticalPreferences.addEventListener('updated', this);
