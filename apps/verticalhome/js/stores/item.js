@@ -17,6 +17,9 @@
 
   var db;
 
+  // hide apps which will not be shown in homescreen.
+  const HIDDEN_APPS = ['app://communications.gaiamobile.org/manifest.webapp'];
+
   function sort(entries, order) {
 
     if (!order || !order.length) {
@@ -326,7 +329,10 @@
           var thisItem = collected[i];
           if (thisItem.type === 'app') {
             var itemObj = this.applicationSource.mapToApp(thisItem);
-            addIfUnique.call(this, itemObj);
+
+            if (!HIDDEN_APPS.indexOf('thisItem.manifestURL')) {
+              addIfUnique.call(this, itemObj);
+            }
           } else if (thisItem.type === 'divider') {
             var divider = new GaiaGrid.Divider(thisItem);
             this._allItems.push(divider);
