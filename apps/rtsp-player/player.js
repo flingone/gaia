@@ -4,7 +4,7 @@
 
 (function () {
   var mediaElement;
-  var label;
+  var timerFlag = true;
 
 
   function formatTime(digit) {
@@ -42,7 +42,6 @@
   window.onload = function () {
     console.log("XXXXX window onload");
     mediaElement = document.getElementById('media');
-    label = document.getElementById('label');
     timer = document.getElementById('timer');
 
     document.getElementById('btn').addEventListener('click', function (event) {
@@ -51,38 +50,31 @@
       var result = ipport.split(":");
       document.getElementById("output_ip").innerHTML = result[0];
       document.getElementById("output_port").innerHTML = result[1];
-      startTimer();
+      if (timerFlag) {
+        startTimer();
+        timerFlag = false;
+      }
     });
 
     mediaElement.addEventListener('error', function (event) {
-      label.innerHTML = "error";
     });
     mediaElement.addEventListener('stalled', function (event) {
-      label.innerHTML = "stalled";
     });
     mediaElement.addEventListener('waiting', function (event) {
-      label.innerHTML = "waiting";
     });
     mediaElement.addEventListener('playing', function (event) {
-      label.innerHTML = "playing";
     });
     mediaElement.addEventListener('pause', function (event) {
-      label.innerHTML = "pause";
     });
     mediaElement.addEventListener('ended', function (event) {
-      label.innerHTML = "ended";
     });
     mediaElement.addEventListener('seeking', function (event) {
-      label.innerHTML = "seeking";
     });
     mediaElement.addEventListener('seeked', function (event) {
-      label.innerHTML = "seeked";
     });
     mediaElement.addEventListener('volumechange', function (event) {
-      label.innerHTML = "volumechange";
     });
     mediaElement.addEventListener('loadedmetadata', function (event) {
-      label.innerHTML = "loadedmetadata";
     });
 
   }
