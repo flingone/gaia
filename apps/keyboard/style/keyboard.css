@@ -152,7 +152,7 @@ button::-moz-focus-inner {
 /* Show the bubble text when the button is highlighted. */
 .keyboard-key.highlighted > .visual-wrapper > .popup {
   z-index: 1;
-  visibility: hidden;
+  visibility: visible;
 }
 
 
@@ -165,7 +165,7 @@ button::-moz-focus-inner {
 
 /* For lowercase, hide the uppercase popup and show the lowercase one */
 .keyboard-key.highlighted.lowercase > .visual-wrapper > .popup.lowercase {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .keyboard-key.highlighted.lowercase > .visual-wrapper > .popup.uppercase {
@@ -246,7 +246,7 @@ button::-moz-focus-inner {
 
 /* Active key, used for shift key - uppercase */
 .keyboard-key.kbr-key-active {
-  background-color: #00caf2;
+  background-color: #463add;
 }
 
 .keyboard-key.kbr-key-active > .visual-wrapper > .key-element {
@@ -256,12 +256,12 @@ button::-moz-focus-inner {
 
 /* Caps lock case */
 .keyboard-key.special-key.kbr-key-hold > .visual-wrapper > .key-element {
-  color: #00caf2;
+  color: #463add;
 }
 
 /* The underline for caps lock */
 .keyboard-key.kbr-key-hold > .visual-wrapper {
-  box-shadow: 0 0.4rem 0 #00caf2;
+  box-shadow: 0 0.4rem 0 #463add;
 }
 
 /* Alt menu enabled */
