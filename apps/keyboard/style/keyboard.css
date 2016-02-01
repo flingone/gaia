@@ -32,7 +32,7 @@ button::-moz-focus-inner {
   z-index: 15;
   width: 100%;
   border-top: 0.1rem solid #a1a5a8;
-  background-color: #606b6e;
+  background-color: #2b2c30;
   pointer-events: auto;
   visibility: visible;
 }
@@ -43,31 +43,31 @@ button::-moz-focus-inner {
   font-size: 0;
 }
 .row1 {
-  background-color: #5b6668;
+  background-color: #2b2c30;
 }
 
 .row2 {
-  background-color: #566063;
+  background-color: #2b2c30;
 }
 
 .row3 {
-  background-color: #525c5e;
+  background-color: #2b2c30;
 }
 
 .row0 > .keyboard-key > .visual-wrapper > .key-element {
-  border-right-color: #525b5e;
+  border-right-color: #2b2c30;
 }
 
 .row1 > .keyboard-key > .visual-wrapper > .key-element {
-  border-right-color: #4c5657;
+  border-right-color: #2b2c30;
 }
 
 .row2 > .keyboard-key > .visual-wrapper > .key-element {
-  border-right-color: #475052;
+  border-right-color: #2b2c30;
 }
 
 .row3 > .keyboard-key > .visual-wrapper > .key-element {
-  border-right-color: #434b4d;
+  border-right-color: #2b2c30;
 }
 
 #keyboard.full-candidate-panel button.keyboard-key {
