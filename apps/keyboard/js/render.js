@@ -27,8 +27,7 @@ var IMERender = (function() {
 
   // Support function for render
   var isSpecialKey = function isSpecialKeyObj(key) {
-    var hasSpecialCode = key.keyCode !== KeyEvent.DOM_VK_SPACE &&
-      key.keyCode &&
+    var hasSpecialCode = key.keyCode &&
       SPECIAL_CODES.indexOf(key.keyCode) !== -1;
     return hasSpecialCode || key.keyCode <= 0;
   };
