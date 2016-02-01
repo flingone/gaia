@@ -31,7 +31,7 @@ button::-moz-focus-inner {
   bottom: 0;
   z-index: 15;
   width: 100%;
-  border-top: 0.1rem solid #a1a5a8;
+  border-top: 0.1rem solid #434346;
   background-color: #2b2c30;
   pointer-events: auto;
   visibility: visible;
