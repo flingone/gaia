@@ -114,7 +114,7 @@ button::-moz-focus-inner {
   line-height: 4.3rem;
   font-weight: normal;
   text-align: center;
-  border-right: 0.1rem solid #525b5e;
+  /*border-right: 0.1rem solid #525b5e;*/
   border-left: 0.1rem solid transparent;
 }
 
@@ -128,7 +128,8 @@ button::-moz-focus-inner {
   font-size: 2.8rem;
   line-height: 5.6rem;
   border-radius: 50%;
-  background-color: #00aacc;
+  /*background-color: #00aacc;*/
+  background-color: #463add;
   visibility: hidden;
 
   /* To override the text-align in .float-key-first and .float-key-last */
@@ -137,7 +138,7 @@ button::-moz-focus-inner {
 
 
 .keyboard-key.highlighted {
-  background-color: #4a5255;
+  background-color: #463add;
 }
 
 .keyboard-key:last-child > .visual-wrapper > .key-element {
@@ -145,13 +146,13 @@ button::-moz-focus-inner {
 }
 
 .keyboard-key.highlighted > .visual-wrapper > .key-element {
-  color: #00caf2;
+  /*color: #00caf2;*/
 }
 
 /* Show the bubble text when the button is highlighted. */
 .keyboard-key.highlighted > .visual-wrapper > .popup {
   z-index: 1;
-  visibility: visible;
+  visibility: hidden;
 }
 
 
@@ -164,7 +165,7 @@ button::-moz-focus-inner {
 
 /* For lowercase, hide the uppercase popup and show the lowercase one */
 .keyboard-key.highlighted.lowercase > .visual-wrapper > .popup.lowercase {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .keyboard-key.highlighted.lowercase > .visual-wrapper > .popup.uppercase {
