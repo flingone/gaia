@@ -648,7 +648,7 @@ bubble above the key when you tap and hold. */
 }
 
 .keyboard-key.highlighted[data-keycode="32"] {
-  background-color: #4a5255;
+  /*background-color: #4a5255;*/
 }
 
 /* Indicator for alternate indicator */
