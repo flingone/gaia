@@ -941,19 +941,30 @@ var IMERender = (function() {
     var labelNode = document.createElement('span');
     // Using innerHTML here because some labels (so far only the &nbsp; in the
     // space key) can be HTML entities.
-    labelNode.innerHTML = label;
+
+    // WA: change some special keys' display content.
+    var displayLabel = label;
+    if (label === '&nbsp') {
+      displayLabel = 'SPACE';
+    } else if (label === '↵') {
+      displayLabel = 'NEXT';
+    } else if (label === '12&') {
+      displayLabel = '123';
+    }
+
+    labelNode.innerHTML = displayLabel;
     labelNode.className = 'key-element';
     labelNode.dataset.label = label;
     vWrapperNode.appendChild(labelNode);
 
     // Add uppercase and lowercase pop-up for highlighted key
     labelNode = document.createElement('span');
-    labelNode.innerHTML = label;
+    labelNode.innerHTML = displayLabel;
     labelNode.className = 'uppercase popup';
     vWrapperNode.appendChild(labelNode);
 
     labelNode = document.createElement('span');
-    labelNode.innerHTML = contentNode.dataset.lowercaseValue;
+    labelNode.innerHTML = displayLabel;//contentNode.dataset.lowercaseValue;
     labelNode.className = 'lowercase popup';
     vWrapperNode.appendChild(labelNode);
 

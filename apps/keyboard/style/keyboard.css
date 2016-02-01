@@ -642,7 +642,7 @@ bubble above the key when you tap and hold. */
 
 /* Indicator for keyboard hiding action */
 .keyboard-key[data-keycode="32"] {
-  background: url('images/icon_hide_keyboard.png') right 0.4rem top 0.4rem / 1.6rem no-repeat;
+  /*background: url('images/icon_hide_keyboard.png') right 0.4rem top 0.4rem / 1.6rem no-repeat;*/
 }
 
 .keyboard-key.highlighted[data-keycode="32"] {
@@ -651,7 +651,7 @@ bubble above the key when you tap and hold. */
 
 /* Indicator for alternate indicator */
 .alternate-indicator {
-  background: url('images/icon_alternate_keyboard.png') left 50% bottom 0.4rem / 1.4rem no-repeat;
+  /*background: url('images/icon_alternate_keyboard.png') left 50% bottom 0.4rem / 1.4rem no-repeat;*/
 }
 
 .search-icon {
