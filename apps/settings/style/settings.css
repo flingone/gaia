@@ -123,7 +123,7 @@ gaia-header button:first-child:active {
  */
 section[role="region"],
 section[role="region"] > div > ul {
-  background-color: #f4f4f4;
+  background-color: #212226;
 }
 
 /**
@@ -1079,4 +1079,40 @@ html[dir="rtl"] ul li > label.range-icons.volume input {
 html[dir="rtl"] #developer-hud ul li > label > span.color-preview {
   padding-left: 0;
   padding-right: 5rem;
+}
+
+.tv_background {
+  background-color: #2b2c30;
+  color: #d5d7dd;
+  text-align: center;
+  font-size: 3.5rem;
+  height: 5rem;
+  margin-top: 0;
+}
+
+#tv-wifi-details {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tv-wifi-details ul,
+#tv-wifi-details ul li{
+  background-color: #212225;
+  color: #d5d7dd;
+}
+
+#tv-wifi-sub-header,
+#tv-wifi-sub-header-advanced{
+  background-color: #212225;
+  color: #d5d7dd;
+}
+
+#tv-wps-a {
+  margin-left: 0;
+  background-color: #1b6dec;
+}
+
+#tv-wifi-enabled {
+  margin-left: 2.3rem;
 }

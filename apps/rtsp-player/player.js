@@ -46,6 +46,9 @@
 
     document.getElementById('btn').addEventListener('click', function (event) {
       var ipport = document.getElementById('ipaddr').value;
+      if (ipport == "") {
+        ipport = "10.240.8.10:8900";
+      }
       mediaElement.src = "rtsp://" + ipport + "/live";
       var result = ipport.split(":");
       document.getElementById("output_ip").innerHTML = result[0];

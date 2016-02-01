@@ -14,8 +14,7 @@ ul li {
   -moz-box-sizing: border-box;
   position: relative;
   margin: 0 1.5rem;
-  border-bottom: 0.1rem solid #e6e6e3;
-  color: #000;
+  color: #d5d7dd;
 }
 
 ul li:last-child {
@@ -37,7 +36,7 @@ ul li > label > span,
 ul li > label > small {
   text-decoration: none;
   outline: 0;
-  color: #000;
+  color: #d5d7dd;
   -moz-box-sizing: border-box;
   font-size: 1.9rem;
   padding: 0 3rem;
@@ -51,6 +50,7 @@ ul li > label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 3rem;
 }
 
 ul li > a,
@@ -74,8 +74,8 @@ ul li:not([aria-disabled="true"]) > small + a:active,
 ul li:not([aria-disabled="true"]) > a[href]:active,
 ul li:not([aria-disabled="true"]) > small + a:focus,
 ul li:not([aria-disabled="true"]) > a[href]:focus {
-  background-color: #b2f2ff;
-  color: #222;
+  background-color: #212226;
+  color: #d5d7dd;
 }
 
 ul li[aria-disabled="true"] > a,
@@ -123,7 +123,7 @@ ul li > *, ul li > label > *, ul li > a > * {
 ul li > small, ul li > label > small , ul li > a > small {
   display: block;
   font-size: 1.4rem;
-  color: #505859;
+  color: #545456;
   /* click/tap events should be caught by the <a> element below the <small> */
   pointer-events: none;
 }
