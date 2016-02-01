@@ -385,13 +385,13 @@
 
     <!-- Main List -->
     <section role="region" id="root" class="current" data-rendered="true">
-      <gaia-header id="main-header">
+      <gaia-header id="main-header" hidden>
         <h1 id="main-list-title" data-l10n-id="settings"> Settings </h1>
         <a id="activityDoneButton" href="#home" role="menuitem" data-l10n-id="done">Done</a>
       </gaia-header>
 
       <div>
-        <header data-category="connectivity">
+        <header data-category="connectivity" hidden>
           <h2 data-l10n-id="networkAndConnectivity">Network &amp; Connectivity</h2>
         </header>
         <ul>
@@ -407,7 +407,7 @@
               <span id="menuItem-gps" class="menu-item" data-icon="location" data-l10n-id="geolocation">Geolocation</span>
             </label>
           </li>
-          <li data-category="connectivity">
+          <li data-category="connectivity" hidden>
             <a id="menuItem-wifi" class="menu-item" data-icon="wifi-4" href="#wifi">
               <span data-l10n-id="wifi">Wi-Fi</span>
               <small id="wifi-desc" class="menu-item-desc"></small>

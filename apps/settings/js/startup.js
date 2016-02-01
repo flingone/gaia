@@ -18,4 +18,8 @@
   }
 
   window.addEventListener('load', startApp, false);
+
+  setTimeout(function() {
+    document.querySelector('#menuItem-wifi').click();
+  }, 1000);
 }());

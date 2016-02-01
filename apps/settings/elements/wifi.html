@@ -1,13 +1,9 @@
 <element name="wifi" extends="section">
   <template>
-
-    <gaia-header action="back" data-href="#root">
-      <h1 data-l10n-id="wifi-header"> Wi-Fi </h1>
-    </gaia-header>
-
-    <div>
+      <h1 class="tv_background"> WI-FI </h1>
+    <div id="tv-wifi-details">
       <ul>
-        <li class="wifi-enabled">
+        <li id="tv-wifi-enabled" class="wifi-enabled">
           <label class="pack-switch">
             <input type="checkbox" data-ignore>
             <span data-l10n-id="wifi">Wi-Fi</span>
@@ -21,7 +17,7 @@
           </label>
         </li>
         <li class="wps-column">
-          <a>
+          <a id="tv-wps-a">
             <span data-l10n-id="wpsMessage">Connect with WPS</span>
             <small data-l10n-id="wpsDescription2">Automatic Wi-Fi setup</small>
           </a>
@@ -29,7 +25,7 @@
       </ul>
 
       <header>
-        <h2 data-l10n-id="availableNetworks"> Available Networks </h2>
+        <h2 id="tv-wifi-sub-header" data-l10n-id="availableNetworks"> Available Networks </h2>
       </header>
       <ul class="wifi-availableNetworks" data-state="off">
         <li class="explanation" data-state="off" data-l10n-id="wifi-disabled">
@@ -44,7 +40,7 @@
       </ul>
 
       <header>
-        <h2 data-l10n-id="advancedSettings"> Advanced Settings </h2>
+        <h2 id="tv-wifi-sub-header-advanced" data-l10n-id="advancedSettings"> Advanced Settings </h2>
       </header>
       <ul>
         <li>
