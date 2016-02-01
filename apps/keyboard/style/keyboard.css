@@ -193,7 +193,8 @@ button::-moz-focus-inner {
 
 /* Highlight for special keys */
 .keyboard-key.special-key.highlighted > .visual-wrapper > .key-element {
-  color: #00b8d6;
+  /*color: #00b8d6;*/
+  color: #ffffff;
 }
 
 .keyboard-key.special-key.highlighted > .visual-wrapper:before,
