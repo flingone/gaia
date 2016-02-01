@@ -303,7 +303,7 @@ and displays the list of alternatives. */
   height: 6rem;
   font-size: 0;
   border-radius: 3rem;
-  background-color: #00aacc;
+  background-color: #463add;
   overflow: hidden;
   white-space: nowrap;
   left: -1.2rem; /* because the first child is 1.2rem wider than others */
@@ -341,7 +341,7 @@ and displays the list of alternatives. */
 #keyboard-accent-char-menu .keyboard-key > .visual-wrapper {
   height: 6rem;
   margin: 0;
-  border-right: 1px solid #0099b8;
+  /*border-right: 1px solid #0099b8;*/
 }
 
 #keyboard-accent-char-menu .keyboard-key > .visual-wrapper .key-element {
@@ -373,7 +373,7 @@ and displays the list of alternatives. */
 /* Highlighted special accent characters. These keys appear in the popover
 bubble above the key when you tap and hold. */
 #keyboard-accent-char-menu .keyboard-key.highlighted > .visual-wrapper > .key-element {
-  background-color: #0099b8;
+  background-color: #1c6eb6;
 }
 
 #keyboard-accent-char-menu > .keyboard-key:last-child .visual-wrapper {
