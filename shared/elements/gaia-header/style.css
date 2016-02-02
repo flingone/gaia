@@ -166,7 +166,7 @@ button,
   justify-content: center;
   text-decoration: none;
   text-align: center;
-  background: none;
+  background: #212226;
   border-radius: 0;
   color: var(--header-button-color, #000);
   font-style: italic;

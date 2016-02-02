@@ -105,7 +105,16 @@ section[role="region"] > div {
 
 gaia-header a:first-child,
 gaia-header button:first-child {
-  color: var(--header-nav-button-color) !important;
+  color: white !important;
+}
+
+gaia-header button {
+  background-color: #2B2C30 !important;
+  color: #D5D7DD !important;
+}
+
+gaia-header h1 {
+  color: white !important;
 }
 
 /**
@@ -1105,12 +1114,11 @@ html[dir="rtl"] #developer-hud ul li > label > span.color-preview {
 #tv-wifi-sub-header,
 #tv-wifi-sub-header-advanced{
   background-color: #212225;
-  color: #d5d7dd;
+  color: #545456;
 }
 
 #tv-wps-a {
-  margin-left: 0;
-  background-color: #1b6dec;
+  margin-left: -2.3rem;
 }
 
 #tv-wifi-enabled {

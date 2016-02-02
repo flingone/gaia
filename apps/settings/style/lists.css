@@ -78,6 +78,11 @@ ul li:not([aria-disabled="true"]) > a[href]:focus {
   color: #d5d7dd;
 }
 
+ul li.active a small {
+  color: #1B6DEC !important;
+}
+
+
 ul li[aria-disabled="true"] > a,
 ul li[aria-disabled="true"] > p {
   color: #797e80;
