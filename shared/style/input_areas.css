@@ -18,12 +18,15 @@ textarea {
   resize: none;
   padding: 0 1.5rem;
   font-size: 1.6rem;
-  border: 0.1rem solid #c7c7c7;
   border-radius: 0;
   box-shadow: none; /* override the box-shadow from the system (performance issue) */
   color: #333;
-  background: #fff;
+  background: #212226;
   margin: 0 0 1rem 0;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: .1rem;
 }
 
 label:active {

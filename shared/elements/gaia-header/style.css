@@ -208,7 +208,7 @@ button.active,
 .-content a[disabled],
 .-content button[disabled] {
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /** Icon Buttons
