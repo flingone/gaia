@@ -18,10 +18,4 @@
   }
 
   window.addEventListener('load', startApp, false);
-
-  function triggerWifi() {
-    console.log('trigerWifi!moz-content-interactive!');
-    document.querySelector('#menuItem-wifi').click();
-  }
-  window.addEventListener('moz-content-interactive', triggerWifi, false);
 }());

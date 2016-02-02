@@ -31,13 +31,19 @@ require(['config/require'], function() {
     }
 
     window.addEventListener('panelready', function onPanelReady(e) {
+      // directly trigger wifi page!
+      console.log('panelready! trigger wifi!');
+      if (document.querySelector('#menuItem-wifi')) {
+        document.querySelector('#menuItem-wifi').click();
+      } else {
+        console.log('ERROR:cannot find wifi item!!');
+      }
+
       if (!isInitialPanel(e.detail.current)) {
         return;
       }
 
       window.removeEventListener('panelready', onPanelReady);
-
-      console.log('Send moz-content-interactive!!!!');
 
       // The loading of the first panel denotes that we are ready for display
       // and ready for user interaction
