@@ -37,6 +37,8 @@ require(['config/require'], function() {
 
       window.removeEventListener('panelready', onPanelReady);
 
+      console.log('Send moz-content-interactive!!!!');
+
       // The loading of the first panel denotes that we are ready for display
       // and ready for user interaction
       window.dispatchEvent(new CustomEvent('moz-app-visually-complete'));

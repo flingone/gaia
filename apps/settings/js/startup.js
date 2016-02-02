@@ -19,7 +19,9 @@
 
   window.addEventListener('load', startApp, false);
 
-  setTimeout(function() {
+  function triggerWifi() {
+    console.log('trigerWifi!moz-content-interactive!');
     document.querySelector('#menuItem-wifi').click();
-  }, 1000);
+  }
+  window.addEventListener('moz-content-interactive', triggerWifi, false);
 }());
