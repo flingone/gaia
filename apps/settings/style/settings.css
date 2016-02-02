@@ -117,6 +117,7 @@ gaia-header button {
 gaia-header h1 {
   color: white !important;
   background-color: #212226;
+  margin-left: 0 !important;
 }
 
 /**

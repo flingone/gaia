@@ -65,7 +65,7 @@ label.pack-radio.danger input ~ span:after {
  * ---------------------------------- */
 
 label.pack-switch input ~ span:after {
-  content: '';
+  content: 'OFF';
   position: absolute;
   right: 0;
   top: 50%;
@@ -75,13 +75,14 @@ label.pack-switch input ~ span:after {
   pointer-events: none;
   border-radius: 1.35rem;
   overflow: hidden;
-  background: #e6e6e6 url(switches/images/switch/background_off.png) no-repeat -3.2rem 0 / 9.2rem 2.7rem;
   transition: background 0.2s ease;
+  color: #1b6dec;
 }
 
 /* switch: 'ON' state */
 label.pack-switch input:checked ~ span:after {
-  background: #e6e6e6 url(switches/images/switch/background.png) no-repeat 0 0 / 9.2rem 2.7rem;
+  content: 'ON';
+  color: #1b6dec;
 }
 
 /* switch: disabled state */
