@@ -246,7 +246,7 @@ body {
   width: 100%;
   height: var(--statusbar-height);
 
-  background: rgba(0, 0, 0, .15);
+  /*background: rgba(0, 0, 0, .15);*/
   content: '';
 }
 
