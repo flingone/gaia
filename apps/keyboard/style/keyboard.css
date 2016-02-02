@@ -80,7 +80,7 @@ button::-moz-focus-inner {
   min-width: 2.6rem;
   padding: 0;
   font-size: 0;
-  font-family: sans-serif;
+  font-family: Open Sans;
   border: none;
   border-radius: 0;  /* To override the system-default border radius for button element  */
   background: none;
@@ -188,7 +188,7 @@ button::-moz-focus-inner {
   bottom: 0;
   left: 0;
   color: #abb0b1;
-  font: 500 1.5rem/4.3rem 'Keyboard Symbols', sans-serif;
+  font: 500 1.5rem/4.3rem 'Keyboard Symbols', Open Sans;
 }
 
 /* Highlight for special keys */
@@ -229,7 +229,7 @@ button::-moz-focus-inner {
 
 /* Special keys - text */
 .keyboard-key.special-key.text > .visual-wrapper > .key-element {
-  font-family: Sans-serif;
+  font-family: Open Sans;
 }
 
 /* For keyboard layout menu*/
@@ -532,7 +532,7 @@ bubble above the key when you tap and hold. */
   position: absolute;
   top: 0.5rem;
   color: #a6a6a6;
-  font: 1.6rem/1.6rem "Keyboard Symbols", sans-serif;
+  font: 1.6rem/1.6rem "Keyboard Symbols", Open Sans;
 }
 
 .keyboard-key.highlighted  .alt-note {
@@ -573,7 +573,7 @@ bubble above the key when you tap and hold. */
 }
 
 #keyboard.landscape .keyboard-key.special-key > .visual-wrapper > .key-element {
-  font: 500 2.1rem/4.3rem 'Keyboard Symbols', sans-serif;
+  font: 500 2.1rem/4.3rem 'Keyboard Symbols', Open Sans;
 }
 
 #keyboard.landscape .keyboard-key.highlighted > .visual-wrapper > .popup {
