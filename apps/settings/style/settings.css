@@ -114,10 +114,16 @@ gaia-header button {
   color: #D5D7DD !important;
 }
 
+gaia-header button:active {
+  background-color: #1b6dec !important;
+}
+
+
 gaia-header h1 {
   color: white !important;
   background-color: #212226;
   margin-left: 0 !important;
+  font-weight: 100;
 }
 
 /**
