@@ -188,8 +188,6 @@ a.active,
 button.active,
 .-content a.active,
 .-content button.active {
-  opacity: 0.2;
-  transition: none;
 }
 
 /**
