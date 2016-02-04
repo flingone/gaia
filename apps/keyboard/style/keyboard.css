@@ -129,7 +129,7 @@ button::-moz-focus-inner {
   line-height: 5.6rem;
   border-radius: 50%;
   /*background-color: #00aacc;*/
-  background-color: #463add;
+  background-color: #1c6dea;
   visibility: hidden;
 
   /* To override the text-align in .float-key-first and .float-key-last */
@@ -138,7 +138,7 @@ button::-moz-focus-inner {
 
 
 .keyboard-key.highlighted {
-  background-color: #463add;
+  background-color: #1c6dea;
 }
 
 .keyboard-key:last-child > .visual-wrapper > .key-element {
@@ -246,7 +246,7 @@ button::-moz-focus-inner {
 
 /* Active key, used for shift key - uppercase */
 .keyboard-key.kbr-key-active {
-  background-color: #463add;
+  background-color: #1c6dea;
 }
 
 .keyboard-key.kbr-key-active > .visual-wrapper > .key-element {
@@ -256,12 +256,12 @@ button::-moz-focus-inner {
 
 /* Caps lock case */
 .keyboard-key.special-key.kbr-key-hold > .visual-wrapper > .key-element {
-  color: #463add;
+  color: #1c6dea;
 }
 
 /* The underline for caps lock */
 .keyboard-key.kbr-key-hold > .visual-wrapper {
-  box-shadow: 0 0.4rem 0 #463add;
+  box-shadow: 0 0.4rem 0 #1c6dea;
 }
 
 /* Alt menu enabled */
@@ -303,7 +303,7 @@ and displays the list of alternatives. */
   height: 6rem;
   font-size: 0;
   border-radius: 3rem;
-  background-color: #463add;
+  background-color: #1c6dea;
   overflow: hidden;
   white-space: nowrap;
   left: -1.2rem; /* because the first child is 1.2rem wider than others */
