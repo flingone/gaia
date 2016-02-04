@@ -6,6 +6,10 @@ html, body {
   overflow: hidden;
 }
 
+body {
+  background-image: url("./video_background.jpg");
+}
+
 .videoContainer {
   overflow: hidden;
   float: left;
